@@ -10,3 +10,4 @@ spring:
    password: 123
  jpa:
   show: true
+foo: v1
