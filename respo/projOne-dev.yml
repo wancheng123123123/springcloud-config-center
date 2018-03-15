@@ -1,13 +1,13 @@
 spring:
-  mvc:
+ mvc:
   view:
    prefix: classpath:/templates/
    suffix: .html
  datasource:
-   driver-class-name: com.mysql.jdbc.Driver  #oracle.jdbc.driver.OracleDriver
-   url: jdbc:mysql://localhost:3306/taotao  #jdbc:oracle:thin:@localhost:1521:orcl
-   username: root
-   password: 123
+  driver-class-name: com.mysql.jdbc.Driver  #oracle.jdbc.driver.OracleDriver
+  url: jdbc:mysql://localhost:3306/taotao  #jdbc:oracle:thin:@localhost:1521:orcl
+  username: root
+  password: 123
  jpa:
   show: true
 foo: v1
