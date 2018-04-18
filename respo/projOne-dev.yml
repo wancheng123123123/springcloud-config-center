@@ -18,7 +18,7 @@ spring:
    prefix: classpath:/templates/
    suffix: .html
  datasource:
-  type: com.alibaba.druid.pool.DruidDataSource
+  #type: com.alibaba.druid.pool.DruidDataSource
   driverClassName: com.mysql.jdbc.Driver  #oracle.jdbc.driver.OracleDriver
   url: jdbc:mysql://localhost:3306/taotao  #jdbc:oracle:thin:@localhost:1521:orcl
   username: root
