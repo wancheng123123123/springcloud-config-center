@@ -32,10 +32,10 @@ feign:
   enabled: true
 swagger:
  enable: true
-eureka:
- instance:
-  hostname: localhost
-  status-page-url: http://localhost:8765/projOne/swagger-ui.html
- client:
-  serviceUrl:
-   defaultZone: http://localhost:8761/eureka/
+#eureka:
+ #instance:
+  #hostname: localhost
+  #status-page-url: http://localhost:8765/projOne/swagger-ui.html
+ #client:
+  #serviceUrl:
+   #defaultZone: http://localhost:8761/eureka/
