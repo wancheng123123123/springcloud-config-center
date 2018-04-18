@@ -13,10 +13,10 @@ spring:
    #discovery:
     #enabled: true
     #serviceId: config-server 
- #mvc:
-  #view:
-   #prefix: classpath:/templates/
-   #suffix: .html
+ mvc:
+  view:
+   prefix: classpath:/templates/
+   suffix: .html
  datasource:
   #type: com.alibaba.druid.pool.DruidDataSource
   driverClassName: com.mysql.jdbc.Driver  #oracle.jdbc.driver.OracleDriver
