@@ -23,10 +23,10 @@ spring:
   url: jdbc:mysql://localhost:3306/taotao  #jdbc:oracle:thin:@localhost:1521:orcl
   username: root
   password: 123
- #jpa:
-  #show: true
-#server:
- #port: 9001
+ jpa:
+  show: true
+server:
+ port: 9001
 #feign:
  #hystrix:
   #enabled: true
