@@ -1,9 +1,41 @@
 spring:
- datasource:
-   driverClassName: com.mysql.jdbc.Driver  #oracle.jdbc.driver.OracleDriver
-   url: jdbc:mysql://localhost:3306/taotao  #jdbc:oracle:thin:@localhost:1521:orcl
-   username: root
-   password: 123
+ application:
+  name: projOne
+ #zipkin:
+    #base-url: http://localhost:8766
+ #sleuth:
+    #sampler:
+      #percentage: 1.0
+ cloud:
+  config:
+   label: master
+   profile: dev
+   discovery:
+    enabled: true
+    serviceId: config-server 
+ mvc:
+  view:
+   prefix: classpath:/templates/
+   suffix: .html
+ #datasource:
+  #type: com.alibaba.druid.pool.DruidDataSource
+   #driver-class-name: com.mysql.jdbc.Driver  #oracle.jdbc.driver.OracleDriver
+   #url: jdbc:mysql://localhost:3306/taotao  #jdbc:oracle:thin:@localhost:1521:orcl
+   #username: root
+   #password: 123
+ jpa:
+  show: true
 server:
  port: 9001
-foo: v1
+feign:
+ hystrix:
+  enabled: true
+swagger:
+ enable: true
+eureka:
+ instance:
+  hostname: localhost
+  status-page-url: http://localhost:8765/projOne/swagger-ui.html
+ client:
+  serviceUrl:
+   defaultZone: http://localhost:8761/eureka/
