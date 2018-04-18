@@ -6,13 +6,13 @@ spring:
  #sleuth:
     #sampler:
       #percentage: 1.0
- cloud:
-  config:
-   label: master
-   profile: dev
-   discovery:
-    enabled: true
-    serviceId: config-server 
+ #cloud:
+  #config:
+   #label: master
+   #profile: dev
+   #discovery:
+    #enabled: true
+    #serviceId: config-server 
  mvc:
   view:
    prefix: classpath:/templates/
